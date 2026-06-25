@@ -3,8 +3,8 @@ class BulkPost < Formula
 
   desc "Templated HTTP requests driven by CSV data, one request (or workflow) per row"
   homepage "https://github.com/true-monte-kristo/bulk-post"
-  url "https://files.pythonhosted.org/packages/bd/dd/2a4af0c31b773db80ac768ac88e7058dbcca2f7f41c1ed8a6cf44d52f612/bulk_post-0.1.0.tar.gz"
-  sha256 "3e114222d5aef6389451e726f048be441bf5c2898693ddc01d98ff4efef0fb60"
+  url "https://files.pythonhosted.org/packages/79/34/8cf605012536914d1114282260f9b3fe89c9285274a45bebfcf0c1aa6a49/bulk_post-0.1.1.tar.gz"
+  sha256 "7ddc09caeaf34f4f806eac915ab6e1c55f66c6c01dbd64da1a4e18676b1b6aef"
   license "MIT"
 
   depends_on "python@3.14"
@@ -34,6 +34,6 @@ class BulkPost < Formula
   end
 
   test do
-    assert_match "0.1.0", shell_output("#{bin}/bulk-post --version")
+    assert_match "0.1.1", shell_output("#{bin}/bulk-post --version")
   end
 end
